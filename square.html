@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+  <title></title>
+  <style type="text/css">
+  </style>
+
+</head>
+
+<body onload="draw();">
+
+<canvas id="square" width="150" height="150"></canvas>
+
+<script type="text/javascript">
+  "use strict";
+  function draw(){
+    var canvas = document.getElementById('square');
+    if( canvas.getContext ){
+      var ctx = canvas.getContext('2d');
+      ctx.fillStyle = "rgb(256,0,0)";
+      ctx.fillRect ( 10, 10, 55, 50 );
+    }
+  }
+</script>
+
+</body>
+
+</html>
